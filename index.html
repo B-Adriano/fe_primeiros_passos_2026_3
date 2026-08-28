@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Importa o CSS do template (principal) -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Ícone de favoritos que aparece na guia da página -->
+    <link rel="icon" href="img/logo01.jpg">
     <title>FirstSteps</title>
 </head>
 
@@ -18,7 +20,7 @@
         <header>
             <!-- Logotipo clicável para a página inicial -->
             <div class="logotitle" title="Clique para a página inicial" aria-label="Clique para a página inicial">
-                <a href="index.html">
+                <a href="index.html" id="myLogo">
                     <img src="img/logo01.jpg" alt="Logotipo do FirstSteps">
                 </a>
                 <h1>FirstSteps</h1>
@@ -58,6 +60,7 @@
             <section>
 
                 <h2>Título desta página</h2>
+
                 <p class="azul">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque pariatur nesciunt ullam
                     ex. Commodi
                     quam ducimus beatae porro possimus exercitationem consequatur accusantium quis, dicta quas illo
@@ -89,7 +92,7 @@
                     <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
                 </ul>
 
-                <img class="azul" src="https://picsum.photos/400/200" alt="Imagem aleatória">
+                <img class="rimg" src="https://picsum.photos/400/200" alt="Imagem aleatória">
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eius libero quos, commodi explicabo
                     voluptates voluptas temporibus nam facilis dolorum, dicta rerum repellendus! Minima numquam deleniti
@@ -102,6 +105,7 @@
                 <p class="azul">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora commodi, dicta aliquam
                     beatae sint libero similique necessitatibus quod ratione deleniti consequuntur amet aperiam aut.
                     Commodi quia dicta cupiditate odit provident.</p>
+
 
             </section>
 
@@ -130,7 +134,30 @@
 
         </footer>
 
+        <!-- Hack para margin no final da tela -->
+        <div class="end-margin">&nbsp;</div>
+
     </div>
+
+    <!-- Aviso de cookies -->
+    <div id="cookie-banner" class="cookie-banner">
+
+        <div class="cookie-text">
+            <strong>🍪 Este site utiliza cookies</strong>
+            <p>
+                Utilizamos cookies para melhorar sua experiência de navegação.
+                Ao continuar navegando, você concorda com o uso de cookies.
+            </p>
+        </div>
+
+        <button id="cookie-accept" type="button">
+            Aceitar
+        </button>
+
+    </div>
+
+    <script>const pageName = "Home Page"</script>
+    <script src="js/scripts.js"></script>
 
 </body>
 
