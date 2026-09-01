@@ -1,40 +1,48 @@
 /*
-js\scripts.js
-JavaScript do template 
+js/scripts.js
+JavaScript do template
 */
 
 /* Recebe uma variável do HTML */
-if (typeof pageName === undefined) {
-    console.log("Ajuste o JavaScript dessa página!")
+if (typeof pageName === "undefined") {
+console.log("Ajuste o JavaScript dessa página!")
 } else {
-    console.log(pageName)
+console.log(pageName)
 }
 
+/* Logotipo */
 
-const myLogo = document.getElementById('myLogo')
-// console.log(myLogo)
+const myLogo = document.getElementById("myLogo")
+
+if (myLogo) {
 myLogo.addEventListener("click", function () {
-    alert("Por que clicou aqui?")
-});
-
+alert("Por que clicou aqui?")
+})
+}
 
 /********************
- * Aviso de cookies *
- ********************/
 
-const cookieBanner = document.getElementById("cookie-banner");
-const cookieAccept = document.getElementById("cookie-accept");
+* Aviso de cookies *
+  ********************/
+
+const cookieBanner = document.getElementById("cookie-banner")
+const cookieAccept = document.getElementById("cookie-accept")
+
+if (cookieBanner && cookieAccept) {
+
 
 // Verifica se o usuário já aceitou os cookies
 if (localStorage.getItem("cookiesAccepted") === "true") {
-    cookieBanner.style.display = "none";
+    cookieBanner.style.display = "none"
 }
 
 // Botão "Aceitar"
 cookieAccept.addEventListener("click", function () {
 
-    localStorage.setItem("cookiesAccepted", "true");
+    localStorage.setItem("cookiesAccepted", "true")
 
-    cookieBanner.style.display = "none";
+    cookieBanner.style.display = "none"
 
-});
+})
+
+}
